@@ -1,0 +1,69 @@
+.img-show-inner
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.img-show-post
+    flex-basis: 31%
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    margin-bottom: 50px;
+    .img-show-post-cover-class
+        width 100%
+        height auto
+        object-fit cover
+
+.img-show-post:hover
+    transform scale(1.05);
+    transition all .4s;
+
+.img-show-post-title
+    text-align: center
+    font-size: 1.4em
+    font-family Gothic
+    margin-top: 30px
+    
+
+.img-show-post-date
+    text-align: center
+    font-family Gothic
+    text-transform : uppercase
+    letter-spacing: 1.5px
+    font-size: 0.8em
+    margin-bottom: 45px
+    margin-top: -9px
+    line-height: 3
+    color: $color-text-secondary
+    position relative
+    &:after 
+      content ""
+      position absolute
+      top 0
+      left 45%
+      right 45%
+      bottom 98%
+      transition all .3s
+      background-color $color-theme-main
+
+
+
+
+.img-show-post
+    display: flex
+    flex-direction: column
+    &:first-child
+        flex-basis: 100%
+        flex-direction: row
+        margin-bottom: 85px
+        .img-show-post-cover
+            flex-basis: 65.5%
+        .img-show-post-intro
+            flex-basis: 34%
+            margin: auto
+    
+.img-show-post-cover
+    img
+        transition: all .4s
+        &:hover
+            transform scale(1.05)
